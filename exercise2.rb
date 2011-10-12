@@ -55,7 +55,7 @@ compressStyle(input_file) { |output_string|
 			puts "\nNothing Effected\n\n"
 		end
 	else
-		print "File named #{output_file} already exist, do you want to create a new file (y) ? "
+		print "File named #{output_file} does not exists, do you want to create a new file (y) ? "
 		prompt = gets.chomp
 		if(prompt == "y" || prompt == "Y")
 			op_file = File.new(output_file, "w")
